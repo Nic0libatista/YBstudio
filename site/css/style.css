@@ -1,0 +1,162 @@
+.topo{
+    display: flex;
+    max-width: 1500px; /*Largura máxima 1500 */
+    width: 100%; /*abaixo de 1500, preenche a tela inteira */
+    margin: 0 auto; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.topo h1{
+    /* transformar o h1 em imagem*/
+    width: 200px;
+    height: 100px;
+    background-image: url(../assets/logofundo.png);
+    margin: 10px 0;
+    text-indent: -9999px; /*manda o texto para longe*/
+}
+
+/* Menu */
+.menu ul{
+    display: flex;
+    gap: 60px;
+}
+
+
+.menu ul li a{
+    font-size: 30px;
+    /* color: #bfa065; */
+    color: #EDCB7C;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.menu ul li a:hover{
+    color: #c1606b;
+    text-decoration: underline;
+}
+
+/* Bemvindo -- SOBRE */
+
+.bem-vindo{
+    margin-top: 20px;
+}
+.bem-vindo h3{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.sobre {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sobre div header h3 {
+    margin-top: 15px;
+}
+
+.sobre div p{
+    margin: 20px 15px 15px 30px;
+}
+
+/* DESTAQUE -- SERVIÇOS */
+
+.destaque header{
+    text-align: center;
+    width: 0 auto;
+    padding: 50px 0;
+    
+}
+
+.destaque h3{
+    text-align: center;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.destaque h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.destaque h5{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.destaque h4{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.destaque p{
+    font-family: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.destaque div{
+   /* max-width: 1100px; */ 
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.destaque article{
+    background-color: #333;
+    width: 250px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+.destaque article img{
+    margin-top: 10px;
+    border-radius: 10%;
+}
+
+/* Hover/ Transição para descrição do serviço*/
+.destaque article {
+    position: relative;
+    background-color: #333;
+    width: 250px;
+    height: 300px;
+    border-radius: 10%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.destaque article img,
+.destaque article h5 {
+    transition: 0.4s;
+}
+
+.destaque article:hover img,
+.destaque article:hover h5 {
+    opacity: 0.4;
+}
+
+.destaque article .desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.destaque article:hover .desc {
+    opacity: 1;
+}
