@@ -41,6 +41,8 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
 
 </head>
 <body>
@@ -88,7 +90,7 @@
             </div>
 
 
-        <section class="destaque">
+        <section class="servico">
       
         <header>
       
@@ -98,6 +100,7 @@
         </header>
       
             <div>
+                
                 <article>
                     <img src="assets/image.png" alt=".">
                     <h5> Nome do procedimento </h5>
@@ -121,13 +124,42 @@
                     <h5> Nome do procedimento </h5>
                     <p class="desc">Hover com descrição breve sobre o procedimento.</p>
                 </article>
+
+                
             </div>
       
+        </section>
+
+        <section class="galeria">
+            <header>
+      
+                <h3> Galeria  </h3>
+                  
+            </header>
+
+            
+
         </section>
 
     </main>
 
     <!-- Rodapé -->
+
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+
+    <script>
+        $('.carousel').slick({
+                        dots: true,
+                        infinite: true,
+                        speed: 500,
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        });
+
+    </script>
 
 </body>
 </html>

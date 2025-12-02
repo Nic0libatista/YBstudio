@@ -26,7 +26,7 @@
 
 
 .menu ul li a{
-    font-size: 30px;
+    font-size: 35px;
     /* color: #bfa065; */
     color: #EDCB7C;
     text-decoration: none;
@@ -40,7 +40,7 @@
 /* Bemvindo -- SOBRE */
 
 .bem-vindo{
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .bem-vindo h3{
     font-size: 40px;
@@ -64,44 +64,44 @@
 
 /* DESTAQUE -- SERVIÇOS */
 
-.destaque header{
+.servico header{
     text-align: center;
     width: 0 auto;
     padding: 50px 0;
     
 }
 
-.destaque h3{
+.servico h3{
     text-align: center;
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.destaque h2{
+.servico h2{
     text-align: center;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.destaque h5{
+.servico h5{
     margin-top: 20px;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
 
-.destaque h4{
+.servico h4{
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
-.destaque p{
+.servico p{
     font-family: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.destaque div{
+.servico div{
    /* max-width: 1100px; */ 
     display: flex;
     text-align: center;
@@ -110,20 +110,21 @@
     margin: 0 auto;
 }
 
-.destaque article{
+
+.servico article{
     background-color: #333;
     width: 250px;
     height: 300px;
     border-radius: 10%;
 }
 
-.destaque article img{
+.servico article img{
     margin-top: 10px;
     border-radius: 10%;
 }
 
 /* Hover/ Transição para descrição do serviço*/
-.destaque article {
+.servico article {
     position: relative;
     background-color: #333;
     width: 250px;
@@ -134,17 +135,17 @@
     transition: 0.4s;
 }
 
-.destaque article img,
-.destaque article h5 {
+.servico article img,
+.servico article h5 {
     transition: 0.4s;
 }
 
-.destaque article:hover img,
-.destaque article:hover h5 {
+.servico article:hover img,
+.servico article:hover h5 {
     opacity: 0.4;
 }
 
-.destaque article .desc {
+.servico article .desc {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -157,8 +158,19 @@
     transition: 0.4s;
 }
 
-.destaque article:hover .desc {
+.servico article:hover .desc {
     opacity: 1;
 }
 
 
+.galeria header{
+    text-align: center;
+    width: 0 auto;
+    padding: 50px 0;
+}
+
+.galeria h3{
+    text-align: center;
+    font-size: 50px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
