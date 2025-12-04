@@ -40,9 +40,9 @@
     <title> Studio Yasmim Boaventura </title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -130,16 +130,114 @@
       
         </section>
 
-        <section class="galeria">
+        <section class="galeria studio">
             <header>
       
                 <h3> Galeria  </h3>
-                  
+                
             </header>
-
-            
+            <div class="titulo">
+                Studio
+            </div>
+            <div class="carousel" id="imagem_studio">
+                <div><img src="assets/imagem_studio.png"/></div>
+                <div><img src="assets/imagem_studio.png" /></div>
+                <div><img src="assets/imagem_studio.png"/></div>
+                <div><img src="assets/imagem_studio.png"/></div>
+                <div><img src="assets/imagem_studio.png" /></div>
+                <div><img src="assets/imagem_studio.png"/></div>
 
         </section>
+
+        <section class="galeria procedimento">
+
+            <div class="titulo">
+                Procedimentos
+            </div>
+            <div class="carousell" id="imagem_procedimentos">
+                <div><img src="assets/imagem_procedimento.png"/> </div>
+                <div><img src="assets/imagem_procedimento.png"/> </div>
+                <div><img src="assets/imagem_procedimento.png"/> </div>
+                <div><img src="assets/imagem_procedimento.png" /> </div>
+                <div><img src="assets/imagem_procedimento.png"/>  </div>
+            </div>
+        </section>
+        <hr>
+
+
+       <!--  <section class="avaliacao">
+            <header>
+      
+                <h3> Avaliações </h3>
+                
+            </header>
+
+            <div>
+                <img src="assets/banner.png" alt="">
+
+            </div>
+        </section> -->
+
+        <section class="contato">
+            <header>
+                <h3> Entre em Contato </h3>
+            </header>
+
+            <div class="parent">
+                <div class="div1">
+                     <a href=""><img src="assets/redessociais.png" alt=""> WhatsApp </a> <br>
+                     <a href=""><img src="assets/redessociais.png" alt=""> Email </a>
+                </div>
+
+
+                <div class="div2"> 
+                    <a href=""><img src="assets/redessociais.png" alt=""> Instagram </a> <br>
+                    <a href=""><img src="assets/redessociais.png" alt=""> Tiktok </a>
+                    
+                </div>
+
+
+                <div class="div3">
+                     <form action="" method="post">
+                        <input type="text" name="Nome" id="" placeholder="Nome" size="40"> <br>
+                        <input type="email" name="Email" id="" placeholder="Email" size="40"> <br>
+                        <h4> Horario desejado: </h4>
+
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="manha" name="disponibilidade[]" value="manha">
+                            <label for="manha">Manhã (entre 8h às 12h)</label>
+                        </div>
+        
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="tarde" name="disponibilidade[]" value="tarde">
+                            <label for="tarde">Tarde (entre 13h às 18h)</label>
+                        </div>
+
+                        <select id="procedimento">
+                            <option value="Serviço" disabled selected> Serviço </option>
+                            <option value="Brow lamination">Brow lamination </option>
+                            <option value="Design com coloração">Design com coloração</option>
+                            <option value="Design com Henna">Design com Henna</option>
+                            <option value="Design Personalizado">Design Personalizado </option>
+                            <option value="Epilação facial">Epilação facial</option>
+                            <option value="Hydra gloss lips">Hydra gloss lips</option>
+                            <option value="Lash lifting">Lash lifting</option>
+                            <option value="Reconstrução das Sobrancelhas">Reconstrução das Sobrancelhas</option>
+                            <option value="SPA das Sobrancelhas">SPA das Sobrancelhas</option>
+                            <option value=""></option>
+                          </select>
+                          <br>
+
+                          <textarea rows="4" cols="40" placeholder="Mensagem"></textarea>
+
+                          <button type="submit">Enviar</button>
+                     </form> 
+                    
+                </div>
+                </div>
+        </section>
+
+
 
     </main>
 
@@ -155,11 +253,22 @@
                         dots: true,
                         infinite: true,
                         speed: 500,
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
                         });
 
     </script>
+
+<script>
+    $('.carousell').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    });
+
+</script>
 
 </body>
 </html>
