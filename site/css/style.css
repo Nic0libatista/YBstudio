@@ -37,6 +37,9 @@
     text-decoration: underline;
 }
 
+.banner img{
+    width: 100%;
+}
 /* Bemvindo -- SOBRE */
 
 .bem-vindo{
@@ -106,20 +109,32 @@
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    max-width: 1300px;
     margin: 0 auto;
+
+}
+.servico{
+    max-width: 1500px; /*Largura máxima 1500 */
+    width: 100%; /*abaixo de 1500, preenche a tela inteira */
+    margin: 0 auto; 
+    align-items: center;
+    justify-content: center;
 }
 
 
-.servico article{
-    background-color: #333;
-    width: 250px;
-    height: 300px;
+.carouseel article {
+    background-color: #333 !important;
+    width: 250px !important;
+    height: 300px !important;
     border-radius: 10%;
+  
+    transition: 0.4s;
+    margin-left: 55px !important;
 }
+
 
 .servico article img{
-    margin-top: 10px;
+    
+    margin: 10px auto auto auto;
     border-radius: 10%;
 }
 
@@ -162,6 +177,8 @@
     opacity: 1;
 }
 
+
+/*      Galeria   */
 
 .galeria header{
     text-align: center;
@@ -207,43 +224,30 @@ hr{
 }
 
 
-
-img:hover{
-    transform: translateY(-4px) scale(1.05); /* Pra cima, %5 maior */
-    box-shadow: 0 8px  20px rgba(51, 51, 51, 0.4); 
-   /* filter: brightness(100%); 
-    box-shadow: 0 0 20px 10px rgb(5, 5, 5);*/
-}
-
 .contato{
     max-width: 1500px; 
     width: 100%;
     margin: 50px auto auto auto; 
 }
 .parent {
+    max-width: 1500px; 
+    width: 100%;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 11px;
     grid-row-gap: 0px;
+    place-items: center;
     }
     
     .div1 { grid-area: 1 / 1 / 2 / 2; }
     .div2 { grid-area: 1 / 2 / 2 / 3; }
     .div3 { grid-area: 1 / 3 / 2 / 5; }
 
-
-    .contato a{
-        font-size: 20px;
-        color: #333;
-        text-decoration: underline;
-        margin-left: 40px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .contato a:hover{
-        color: #ccc;
-        text-decoration: underline;
-    }
 
     .div1 , .div2, .div3{
         margin-top:50px;
@@ -253,7 +257,23 @@ img:hover{
         margin-top: 10px;
     }
 
-    .div1 a, .div1 a img, .div2 a, .div2 a img {
-        margin-top: 10px;
-    }
     
+        
+
+       .contatoo a{
+        display: flex;
+        align-items: center;   
+        gap: 8px; 
+        font-size: 28px;
+        color: #333;
+        text-decoration: underline;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .contatoo a:hover{
+        color: #ccc;
+        text-decoration: underline;
+    }
+
+    .contatoo p{
+        margin-left: 50px;
+    }
